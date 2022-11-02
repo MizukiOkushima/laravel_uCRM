@@ -46,7 +46,8 @@ class HandleInertiaRequests extends Middleware
             // フラッシュメッセージの作成
             'flash' => [
                 // fn() 必要なときだけ処理を実行することが出来る
-                'message' => fn() => $request->session()->get('message')
+                'message' => fn() => $request->session()->get('message'),
+                'status' => fn() => $request->session()->get('status')
             ]
         ]);
     }

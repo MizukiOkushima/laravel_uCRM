@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreItemRequest;
 use App\Http\Requests\UpdateItemRequest;
 use App\Models\Item;
+use Inertia\Inertia;
 
 class ItemController extends Controller
 {
@@ -15,7 +16,10 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Items/index', [
+        // selectでデータベースの内容を取得 selectの場合->get()を末尾に記載すること
+        'items' => Item::select('id', 'name', 'price', 'is_selling')->get()
+        ]);
     }
 
     /**
@@ -25,7 +29,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Items/Create');
     }
 
     /**
@@ -36,7 +40,18 @@ class ItemController extends Controller
      */
     public function store(StoreItemRequest $request)
     {
-        //
+        // DB保存
+        Item::create([
+            'name' => $request->name,
+            'memo' => $request->memo,
+            'price' => $request->price
+        ]);
+
+        // DB保存後リダイレクト処理 商品一覧へ戻る
+        return to_route('items.index')->with([
+            'message' => '登録しました。',
+            'status' => 'success'
+        ]);
     }
 
     /**
@@ -47,7 +62,9 @@ class ItemController extends Controller
      */
     public function show(Item $item)
     {
-        //
+        return Inertia::render('Items/Show', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -58,7 +75,9 @@ class ItemController extends Controller
      */
     public function edit(Item $item)
     {
-        //
+        return Inertia::render('Items/Edit', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -70,7 +89,22 @@ class ItemController extends Controller
      */
     public function update(UpdateItemRequest $request, Item $item)
     {
-        //
+        // $request->name   入力した値
+        // $item->name      今入っている情報
+        // dd($item->name, $request->name);
+
+        // 今入っている情報（更新ページ内で入力した値）を保存する
+        $item->name = $request->name;
+        $item->memo = $request->memo;
+        $item->price = $request->price;
+        $item->is_selling = $request->is_selling;
+        $item->save();
+
+        // リダイレクト
+        return to_route('items.index')->with([
+            'message' => '更新しました。',
+            'status' => 'success'
+        ]);
     }
 
     /**
@@ -81,6 +115,11 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        $item->delete();
+
+        return to_route('items.index')->with([
+            'message' => '削除しました。',
+            'status' => 'danger'
+        ]);
     }
 }
