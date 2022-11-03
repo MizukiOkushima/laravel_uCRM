@@ -49,7 +49,7 @@ const storeCustomer = () => {
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                商品登録
+                顧客登録
             </h2>
         </template>
 
