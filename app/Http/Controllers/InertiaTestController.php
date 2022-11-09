@@ -9,7 +9,7 @@ use App\Models\InertiaTest;
 class InertiaTestController extends Controller
 {
     public function index() {
-        return Inertia::render('Inertia/index', [
+        return Inertia::render('Inertia/Index', [
             // InertiaTest::all() テーブルすべての情報を取得
             'blogs' => InertiaTest::all()
         ]);

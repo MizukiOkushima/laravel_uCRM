@@ -19,7 +19,7 @@ class CustomerController extends Controller
     {
         $customers = Customer::searchCustomers($request->search)->select('id', 'name', 'kana', 'tel')->paginate(50);
 
-        return Inertia::render('Customers/index', [
+        return Inertia::render('Customers/Index', [
             // selectでデータベースの内容を取得 selectの場合->get()を末尾に記載すること
             'customers' => $customers
         ]);

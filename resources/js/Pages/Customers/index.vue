@@ -38,7 +38,7 @@ const searchCustomers = () => {
                                 <FlashMessage />
                                 <div class="flex my-4 lg:w-2/3 w-full mx-auto">
                                     <div>
-                                        <input type="text" name="search" v-model="search" class="bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 leading-8 transition-colors duration-200 ease-in-out mr-3">
+                                        <input type="text" name="search" v-model="search" class="bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 leading-7 transition-colors duration-200 ease-in-out mr-3">
                                         <button class="bg-blue-300 text-white py-2 px-2 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded" @click="searchCustomers">検索</button>
                                     </div>
                                     <Link as="button" :href="route('customers.create')" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">顧客登録</Link>
@@ -51,7 +51,7 @@ const searchCustomers = () => {
                                                     class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
                                                     Id</th>
                                                 <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                                                    指名</th>
+                                                    氏名</th>
                                                 <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                                                     カナ</th>
                                                 <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">

@@ -121,7 +121,7 @@ const storeCustomer = () => {
 
                                             <div class="p-2 w-full">
                                                 <div class="relative">
-                                                    <label class="leading-7 text-sm text-gray-600">性別</label>
+                                                    <label class="leading-7 text-sm text-gray-600">性別</label><br>
                                                     <input type="radio" id="gender0" name="gender" v-model="form.gender" value="0">
                                                     <label for="gender0" class="ml-2 mr-4">男性</label>
                                                     <input type="radio" id="gender1" name="gender" v-model="form.gender" value="1">
