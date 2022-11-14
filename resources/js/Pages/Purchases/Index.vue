@@ -75,7 +75,8 @@ onMounted(() => {
                                                 </td>
                                                 <td class="border-b-2 border-gray-200 px-4 py-3">{{ order.total }}
                                                 </td>
-                                                <td class="border-b-2 border-gray-200 px-4 py-3">{{ order.status }}</td>
+                                                <td v-if="order.status === 1" class="border-b-2 border-gray-200 px-4 py-3">注文済</td>
+                                                <td v-if="order.status === 0" class="border-b-2 border-gray-200 px-4 py-3">キャンセル済</td>
                                                 <td class="border-b-2 border-gray-200 px-4 py-3">{{ dayjs(order.created_at).format('YYYY-MM-DD HH:mm:ss') }}</td>
                                             </tr>
                                         </tbody>

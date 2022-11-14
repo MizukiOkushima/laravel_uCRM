@@ -135,7 +135,7 @@ const setCustomerId = id => {
                                                                     <option v-for="q in quantity" :value="q">{{ q }}</option>
                                                                 </select>
                                                             </td>
-                                                            <td class="px-4 py-3">{{ item.price * item.quantity }}</td>
+                                                            <td class="px-4 py-3 w-200">{{ item.price * item.quantity }}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
