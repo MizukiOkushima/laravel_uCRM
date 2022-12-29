@@ -3,6 +3,7 @@
 ログインID：test@test.com<br>
 ログインPW：password<br>
 ご自由にログインして遊んでみてください！<br>
+データ分析はまだ機能として動きません…。
 
 ## 環境構築
 composer install<br>
