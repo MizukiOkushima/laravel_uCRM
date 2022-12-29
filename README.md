@@ -1,4 +1,9 @@
-## インストール
+# 顧客管理システム
+公開用URL：http://ec2-18-207-222-3.compute-1.amazonaws.com/login
+ログインID：test@test.com
+ログインPW：password
+
+## 環境構築
 
 composer install<br>
 npm install && npm run dev<br>
