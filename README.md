@@ -1,10 +1,9 @@
 # 顧客管理システム
-公開用URL：http://ec2-18-207-222-3.compute-1.amazonaws.com/login
-ログインID：test@test.com
-ログインPW：password
+公開用URL：http://ec2-18-207-222-3.compute-1.amazonaws.com/login<br>
+ログインID：test@test.com<br>
+ログインPW：password<br>
 
 ## 環境構築
-
 composer install<br>
 npm install && npm run dev<br>
 .env.exampleを .envにコピー<br>
@@ -12,11 +11,9 @@ npm install && npm run dev<br>
 php artisan key:generate<br>
 
 ## 開発中の簡易サーバー
-
-サーバー側<br>
+###サーバー側<br>
 php artisan serve<br>
-
-フロント側 (vite)<br>
+###フロント側 (vite)<br>
 npm run dev<br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
