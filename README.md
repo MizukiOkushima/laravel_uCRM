@@ -2,7 +2,7 @@
 公開用URL：http://ec2-13-230-12-224.ap-northeast-1.compute.amazonaws.com/login<br>
 ログインID：test@test.com<br>
 ログインPW：password<br>
-ご自由にログインして遊んでみてください！<br>
+ご自由にログインして遊んでみてください。<br>
 データ分析はまだ機能として動きません…。
 
 ## 環境構築
@@ -17,6 +17,12 @@ php artisan key:generate<br>
 php artisan serve<br>
 ### フロント側 (vite)<br>
 npm run dev<br>
+
+## ページスクリーンショット
+![スクリーンショット2022-12-30（16 39 28）（小）](https://user-images.githubusercontent.com/95268598/210046345-53d833d6-4d45-4f0b-a0ad-a51bd5e33759.jpeg)
+![スクリーンショット2022-12-30（16 33 47）（小）](https://user-images.githubusercontent.com/95268598/210045887-7ce6f04b-6780-4e66-9db8-6974f3ce930f.jpeg)
+![スクリーンショット2022-12-30（16 28 23）（小）](https://user-images.githubusercontent.com/95268598/210045685-70b06d11-d836-4467-9e94-f87e07331d14.jpeg)
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
