@@ -1,5 +1,5 @@
 ## 顧客管理システム
-公開用URL：http://ec2-18-207-222-3.compute-1.amazonaws.com/login<br>
+公開用URL：http://ec2-13-230-12-224.ap-northeast-1.compute.amazonaws.com/login<br>
 ログインID：test@test.com<br>
 ログインPW：password<br>
 ご自由にログインして遊んでみてください！<br>
