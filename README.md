@@ -27,6 +27,10 @@ npm run dev<br>
 ![スクリーンショット2022-12-30（16 28 23）（小）](https://user-images.githubusercontent.com/95268598/210045685-70b06d11-d836-4467-9e94-f87e07331d14.jpeg)
 ![スクリーンショット2022-12-30（16 45 31）（小）](https://user-images.githubusercontent.com/95268598/210046834-c473b3a4-84b5-49ad-8c65-30128102020b.jpeg)
 
+## 外部リンク
+YouTube 発表用紹介動画<br><br>
+[![](https://img.youtube.com/vi/Q2AjwtY5IEY/0.jpg)](https://www.youtube.com/watch?v=Q2AjwtY5IEY)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
