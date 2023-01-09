@@ -9,17 +9,17 @@
 　名前とフリガナが一致していません。<br>
 
 ## 環境構築
-composer install<br>
-npm install && npm run dev<br>
-.env.exampleを .envにコピー<br>
+`composer install`<br>
+`npm install` && `npm run dev`<br>
+.env.example を .envにコピー<br>
 .envのDB関連、sanctum, sessionなどの情報を編集<br>
-php artisan key:generate<br>
+`php artisan key:generate`<br>
 
 ## 開発中の簡易サーバー
 ### サーバー側<br>
-php artisan serve<br>
+`php artisan serve`<br>
 ### フロント側 (vite)<br>
-npm run dev<br>
+`npm run dev`<br>
 
 ## ページスクリーンショット
 ![スクリーンショット2022-12-30（16 39 28）（小）](https://user-images.githubusercontent.com/95268598/210046345-53d833d6-4d45-4f0b-a0ad-a51bd5e33759.jpeg)
