@@ -1,8 +1,13 @@
 ## 顧客管理システム
-公開用URL：http://ec2-13-230-12-224.ap-northeast-1.compute.amazonaws.com/login<br>
-ログインID：test@test.com<br>
-ログインPW：password<br>
-ご自由にログインして遊んでみてください。<br>
+公開用URL：~~http://ec2-13-230-12-224.ap-northeast-1.compute.amazonaws.com/login~~<br>
+<br>
+2023/02/01 AWSのインスタンス終了しました。<br>
+ちなみにひと月34円で運用できましたがずっと公開しておくとお金がかかるため終了しました。<br>
+アクセスが無いタイミングでサーバーを休止状態にすることで節約する方法もあるそうなので、<br>
+よかったら勉強してみてください。<br>
+<br>
+AWSを使用したLaravelのデプロイ方法は下記のサイトを参考にしました。<br>
+参考URL：https://brainlog.jp/server/aws/post-3246/<br>
 
 ・データ分析はまだ実装していません。<br>
 ・Seederを使用してダミーの顧客情報を1000件登録したため<br>
